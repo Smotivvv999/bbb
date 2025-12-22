@@ -1,8 +1,5 @@
 console.log("=== BOT FILE YanzBot.js DIPAKAI ===");
 const { Client, GatewayIntentBits, Collection, EmbedBuilder } = require("discord.js");
-if (process.env.NODE_ENV !== "production") {
-  require("dotenv").config();
-}
 const fs = require("fs");
 
 const client = new Client({
@@ -43,5 +40,6 @@ client.on("interactionCreate", async interaction => {
 });
 
 client.login(process.env.TOKEN);
+
 
 
